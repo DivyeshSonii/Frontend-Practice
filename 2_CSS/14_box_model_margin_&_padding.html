@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model, margin & padding</title>
+    <style>
+        /* " '*' - universal selector" (to define pre-defined/default value for all elements of "style" tag)
+        we can over-write (readjust) the default values in elements itself. */
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        /* "body selector" - (used for entire cover)*/
+        body {
+            background-color: rgb(187, 118, 118);
+        }
+
+        .container {
+            background-color: bisque;
+            border: 2.5px solid rgb(29, 19, 84);
+
+            /* padding: 50px; ------------------(for all sides)*/
+            /* padding-top: 50px; */
+            /* padding-bottom: 50px; */
+            /* padding-left: 50px; */
+            /* padding-right: 50px; */
+
+            /* margin: 30px; ------------------(for all sides)*/
+            /* margin-top: 40px; */
+            /* margin-bottom: 60px; */
+            /* margin-left: 20px; */
+            /* margin-right: 35px; */
+
+            /* we can set padding/ margin like this also */
+            /* padding: top right bottom left (clock-wise)*/
+            /* padding: 34px 29px 24px 9px; */
+            /* margin: top right bottom left (clock-wise)*/
+            /* margin: 14px 19px 44px 39px; */
+
+            /* we can set padding/ margin like this also */
+            /* padding: y(top/bottom) x(left/right) */
+            padding: 34px 19px;
+            /* margin: y(top/bottom) x(left/right) */
+            margin: 14px 19px;
+
+            border-radius: 23px;
+            width: 540px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>First Heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit ad sint ut cumque vero soluta
+            blanditiis earum molestias nam! ipsum dolor sit amet consectetur adipisicing elit. Iure, temporibus.</p>
+    </div>
+
+    <div class="container">
+        <h3>Second Heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit ad sint ut cumque vero soluta
+            blanditiis earum molestias nam! ipsum dolor sit amet consectetur adipisicing elit. Iure, temporibus.</p>
+    </div>
+
+    <div class="container">
+        <h3>Third Heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit ad sint ut cumque vero soluta
+            blanditiis earum molestias nam! ipsum dolor sit amet consectetur adipisicing elit. Iure, temporibus.</p>
+    </div>
+</body>
+
+</html>

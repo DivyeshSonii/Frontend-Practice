@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soni's Fitness Club</title>
+</head>
+<link
+    href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat&family=Kalam:wght@700&family=Questrial&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    body {
+        /* CSS Reseting */
+        padding: 0px;
+        margin: 0px;
+        background: url('img/Training.jpg');
+        height: 1260px;
+        color: white;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        margin: 17px 20px;
+    }
+
+    .left img {
+        width: 65px;
+        filter: invert(100%);
+        display: block;
+        margin: auto;
+    }
+
+    .left div {
+        text-align: center;
+        padding-top: 15px;
+        font-family: 'Kalam', cursive;
+        font-size: 20px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 35%;
+        position: fixed;
+        top: 20px;
+        left: 600px;
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        position: fixed;
+        right: 40px;
+        top: 29px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 23px;
+        font-family: 'Kalam', cursive;
+    }
+
+    .navbar li a {
+        color: rgb(219, 219, 219);
+        text-decoration: none;
+        padding: 34px 17px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(25, 21, 21);
+    }
+
+    .navbar li a.active {
+        text-decoration: underline;
+        text-decoration-color: rgb(192, 45, 45);
+        color: rgb(192, 45, 45);
+    }
+
+    .navbar li a:active {
+        text-decoration: underline;
+        color: rgb(192, 45, 45);
+    }
+
+
+    .btn {
+        margin: 0px 7px;
+        color: white;
+        padding: 4px 8px;
+        cursor: pointer;
+        background-color: rgb(28, 28, 28);
+        border: 1px solid rgb(192, 45, 45);
+        border-radius: 8px;
+        font-size: 17px;
+        font-family: 'Kalam', cursive;
+    }
+
+    .btn:hover {
+        background-color: rgb(192, 45, 45);
+    }
+
+    .btn:active {
+        background-color: rgb(28, 28, 28);
+    }
+
+    .container {
+        background-color: #16161642;
+        position: fixed;
+        top: 210px;
+        right: 130px;
+        border: 2px solid rgb(192, 45, 45);
+        padding: 20px 75px 20px 45px;
+        width: 23%;
+        border-radius: 20px;
+    }
+
+    .container h1 {
+        color: rgb(255, 0, 0);
+        font-size: 55px;
+    }
+
+    .container h2 {
+        color: rgb(255, 255, 255);
+        margin-top: -25px;
+        padding-left: 80px;
+        padding-bottom: 20px;
+    }
+
+    .form-group input {
+        border: 1px solid black;
+        text-align: left;
+        display: block;
+        width: 400px;
+        padding: 7px;
+        margin: 6px;
+        border-radius: 8px;
+        font-size: 16px;
+        background-color: rgb(243, 243, 243);
+    }
+
+    .gender {
+        color: black;
+        display: inline-block;
+        padding: 2px 8px;
+        font-size: 20px;
+    }
+
+    .container button {
+        display: block;
+        width: 95%;
+        margin: 15px 1px 0px 5px;
+        padding: 6px 0px;
+    }
+
+    .clr {
+        margin: 10px 196px 0px 197px;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/Dumbbell.png" alt="">
+            <div>Soni's Fintess Club</div>
+        </div>
+
+        <!-- mid for navbar -->
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Sign In</button>
+            <button class="btn">Call now</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join now</h1>
+        <h2>now in your city</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Contact number">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter your email">
+            </div>
+            <div class="gender">
+                <label for="gender">Gender :</label>
+                <input type="radio" name="myGender" id="male"><label for="male">Male</label>
+                <input type="radio" name="myGender" id="female"><label for="female">Female</label>
+                <input type="radio" name="myGender" id="other"><label for="other">Other</label>
+            </div>
+            <button class="btn">Submit</button>
+            <div class="clr">
+                <label for="clear"></label>
+                <input type="reset" value="clear" id="clear">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

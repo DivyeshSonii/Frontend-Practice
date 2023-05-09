@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pseudo selectors</title>
+    <style>
+        .container {
+            display: block;
+            width: 230px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type="text"] {
+            padding: 23px;
+            border: 2px solid red;
+        }
+
+        input[type="email"] {
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        a[target] {
+            font-size: 25px;
+            color: crimson;
+        }
+
+        a[target='_self'] {
+            font-size: 15px;
+            color: blue;
+        }
+
+        li:nth-child(5) {
+            /* This will apply CSS to fifth child of <li> */
+            font-weight: bold;
+            color: rgb(203, 125, 37);
+        }
+
+        li:nth-child(2n+0) {
+            /* (2n+0) ==> CSS will apply till sizeof <li> (ex: here, 10), to every second child
+                {2*(0) + 0 = 0}
+                {2*(1) + 0 = 2}
+                {2*(2) + 0 = 4}
+                {2*(3) + 0 = 6}
+                {2*(4) + 0 = 8}
+                {2*(5) + 0 = 10}
+                So, CSS will apply to "2, 4, 6, 8, & 10th" child */
+            font-weight: bold;
+            color: rgb(92, 218, 155);
+        }
+
+        li:nth-child(3n+3) {
+            /* (3n+3)
+            {3*(0) + 3 = 3}
+            {3*(1) + 3 = 6}
+            {3*(2) + 3 = 9} */
+            font-weight: bold;
+            color: rgb(240, 133, 12);
+        }
+
+        li:nth-child(odd) {
+            /* CSS will apply to every "Odd child" */
+            background-color: burlywood;
+        }
+
+        li:nth-child(even) {
+            /* CSS will apply to every "Even child" */
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">go to facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+
+        </form>
+        <ul>
+            <li class="item" id="item-1">item 1</li>
+            <li class="item" id="item-2">item 2</li>
+            <li class="item" id="item-3">item 3</li>
+            <li class="item" id="item-4">item 4</li>
+            <li class="item" id="item-5">item 5</li>
+            <li class="item" id="item-6">item 6</li>
+            <li class="item" id="item-7">item 7</li>
+            <li class="item" id="item-8">item 8</li>
+            <li class="item" id="item-9">item 9</li>
+            <li class="item" id="item-10">item 10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

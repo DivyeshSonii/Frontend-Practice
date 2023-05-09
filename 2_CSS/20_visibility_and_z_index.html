@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+
+    <!-- visibility types : visible(default), hidden, collapse, inherit, initial, unset. -->
+
+    <!-- z-index: used to put an element on upfront/ backside from the secondary element -->
+    <!-- whichever element z-index is high ==> that will be upfront -->
+    <!-- for two elements only, give 
+        "z-index: -1" ==> to that which we want at back. &  "z-index: 1" ==> to that which we want at front.-->
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            background-color: green;
+            /* z-index: will work for position only: (relative, absolute, fixed & sticky.) */
+            position: relative;
+            top: 49px;
+            z-index: 35;
+            /* "z-index: 35" ==> element will be at front. */
+        }
+
+        #box2 {
+            /* display: none; */
+            /* ("display" : will hide the element and space) */
+
+            /* visibility: hidden; */
+            /* ("visibility" : will hide the element but will show it's empty space // (reserve space of that element)) */
+
+            background-color: red;
+            position: relative;
+            top: 14px;
+            z-index: -165;
+            /* "z-index: -165" ==> element will be at back. */
+        }
+
+        #box3 {
+            background-color: blue;
+        }
+
+        #box4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .box#box$*4 -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

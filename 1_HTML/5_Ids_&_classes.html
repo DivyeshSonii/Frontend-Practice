@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ids & Classes</title>
+</head>
+
+<body>
+    <!-- Element : <div>___</div>, etc... -->
+
+    <!-- "id" is a Unique attribute for each element. It can't be reused in another element. -->
+    <!-- "class" is not a Unique attribute for each element. It can be reused with same name in any element-->
+
+    <!-- There can be "Multiple classes" in single element. -->
+    <!-- Give space '__' to add multiple classes. ex: "notUnique reUsable"-->
+
+    <!-- Emmet (It's a shortcut to save the time in HTML & CSS) -->
+    <!-- ". is for class" and "# is for id"-->
+
+    <!-- "div.giveclassname + enter" (will generate class)-->
+    <!-- "div#giveidname + enter" (will generate id)-->
+    <!-- "div#idname.classname + enter" (will generate id and class both in this element)-->
+    <h3> Ids & Classes Basics</h3>
+    <div id="unique" class="notUnique reUsable"> <!-- multiple classes : 1)notUnique 2)reUsable -->
+        Id is unique attribute, where class is not.
+    </div>
+
+    <div class="notUnique reUsable">
+        this is a mainbox.
+    </div>
+
+    <span class="blackborder"></span>
+
+    <!-- ".give1stClassname.2ndClassname + enter" (will generate class & put this class into <div>__</div> element) -->
+    <div class="my1stlass my2ndclass"></div>
+
+    <!-- "#giveIDname + enter" (will generate id & put this id into <div>__</div> element) -->
+    <div id="mynewid"></div>
+
+    <!-- Creating similar multiple elements using Emmet -->
+    <!-- span.myclass1.myclass2.myclass3*4 + enter -->
+    <span class="myclass1 myclass2 myclass3">first</span>
+    <span class="myclass1 myclass2 myclass3">second</span>
+    <span class="myclass1 myclass2 myclass3">third</span>
+    <span class="myclass1 myclass2 myclass3">four</span>
+</body>
+
+</html>

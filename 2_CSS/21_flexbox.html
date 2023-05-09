@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+
+            /* Initialize the flexbox */
+            display: flex;
+
+
+            /* --------- "flex properties for flex container" --------- */
+
+
+            /* ------------------ (1) --- flex-direction --------------------------------- */
+
+            /* (default value of flex-direction is "row") */
+            flex-direction: row;
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+
+
+            /* ------------------ (2) --- flex-wrap -------------------------------------- */
+
+            /* (default valur of flex-wrap is "nowrap") */
+            /* flex-wrap: nowrap */
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+
+
+            /* ------------------ (3) --- flex-flow -------------------------------------- */
+
+            /* shorthand of (flex-direction + flex-wrap) */
+            /* Syntax ==> flex-flow: flex-direction flex-wrap */
+            flex-flow: row-reverse wrap;
+
+
+            /* ------------------ (4) --- justify-content -------------------------------- */
+
+            /* justify-content will jsutify the content in horizontal direction */
+
+            /* to put all elements at center "(in reference of x-axis)" */
+            justify-content: center;
+
+            /* "space-between" => equal space between all elements(except starting & ending of an elemment)*/
+            justify-content: space-between;
+
+            /* "space-evenly" => equal space from starting element to the ending of an element  */
+            justify-content: space-evenly;
+
+            /* "space-around" => equal marginal space from starting element to the ending of an element */
+            justify-content: space-around;
+
+
+            /* ------------------ (4) --- align-items -------------------------------- */
+
+            /* align-items will align the items in vertical direction */
+
+            /* to put all elements at Top of the page (default) "(in reference of y-axis)" */
+            align-items: flex-start;
+
+            /* to put all elements at Center of the page "(in reference of y-axis)" */
+            align-items: center;
+
+            /* to put all elements at Bottom of the page "(in reference of y-axis)" */
+            align-items: flex-end;
+
+            /* to create "vertically evenly space between elements" */
+            /* element height must should be 3-4 times smaller than its width */
+            /* must use "flex-wrap: wrap" while using this */
+            align-items: stretch;
+            /* --------------------------------------------------------------------------- */
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1 {
+            /* --------- "flex properties for flex item" --------- */
+
+
+            /* -------- (1) --- order ---------------------------------------------------- */
+
+            /* Higher the order, later (on that index value) it shows up in the container */
+            order: 2;
+
+
+            /* -------- (2) --- flex-grow --- (while stretching of an element) ----------- */
+
+            /* Higer the flex-grow value, more space it will take as compare to others */
+            flex-grow: 3;
+
+
+            /* -------- (3) --- flex-shrink --- (while compression of an element) -------- */
+
+            /* Higher the flex-shrink value, more it will shrink as compare to others */
+            flex-shrink: 8;
+
+
+            /* -------- (4) --- flex-basis ----------------------------------------------- */
+
+            /* when flex-direction is set to row: flex-basis will control width */
+            /* when flex-direction is set to column: flex-basis will control height (turn-on "flex-direction: column") */
+            flex-basis: 320px;
+        }
+
+        #item-2 {
+            /* flex-grow: 5; */
+            /* flex-shrink: 5; */
+            /* flex-basis: 560px; */
+
+            /* -------- (5) --- flex ----------------------------------------------------- */
+
+            /* shorthand of (flex-grow + flex-shrink + flex-basis) */
+            /* Syntax ==> flex: flex-grow flex-shrink flex-basis */
+            flex: 2 2 250px;
+        }
+
+        #item-3 {
+            /* order: 15; */
+
+            /* -------- (6) --- align-self ----------------------------------------------- */
+
+            /* to put an element at Top of page align to previous element (default) "(in reference of y-axis)" */
+            align-self: flex-start;
+
+            /* to put an element at Center of page align to previous element "(in reference of y-axis)" */
+            align-self: center;
+
+            /* to put an element at Bottom of page align to previous element "(in reference of y-axis)" */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+    </div>
+</body>
+
+</html>

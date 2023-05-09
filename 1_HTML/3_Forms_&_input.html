@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>HTML Forms Tutorial</h2>
+    <form action="backend.php"> <!-- form action = "Place where this data will be stored in backend" -->
+        <div> <!-- "division tag" -->
+            <label for="name">Name :</label> <!-- tag : "label", selects the labeled command. -->
+            <input type="text" name="nyName" id="name" placeholder="Enter your name"> <!-- input type : text -->
+            <!-- "input tag & it's types", write required thing before "input tag", ex: Roll no: -->
+            <!-- types: text, email, date, datetime, button, submit, etc... -->
+        </div>
+        <br>
+        <div>
+            <label for="rollno">Roll.no :</label> <!-- "for == id" -->
+            <input type="text" name="MyRollno" id="rollno" placeholder="Enter your rollno"> <!-- input type : text -->
+        </div>
+        <br>
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" name="myEmail" id="email" placeholder="Enter your email"> <!-- input type : email -->
+        </div>
+        <br>
+        <div>
+            <label for="date">Birth date :</label>
+            <input type="date" name="myDate" id="date"> <!-- input type : date -->
+        </div>
+        <br>
+        <div>
+            <label for="salary">Salary :</label>
+            <input type="number" name="mySalary" id="salary"> <!-- input type : number -->
+        </div>
+        <br>
+        <div>
+            <label for="elegibility">Are you eligible?</label>
+            <input type="checkbox" name="myEligibility" id="elegibility" checked> <!-- input type : checkbox -->
+            <!-- checked : bydefault-->
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender :</label>
+            <label for="male">Male</label> <input type="radio" name="myGender" id="male">
+            <label for="female">Female</label> <input type="radio" name="myGender" id="female">
+            <label for="other">Other</label> <input type="radio" name="myGender" id="other">
+            <!-- input type : radio -->
+        </div>
+        <br>
+        <div>
+            <label for="aboutyourself">Write about yourself:</label>
+            <br><textarea name="myText" cols="50" rows="5" id="aboutyourself"></textarea> <!-- "tag : textarea" -->
+        </div>
+        <br>
+        <div>
+            <label for="car">Travelling : </label>
+            <select name="myCar" id="car"> <!-- "tag : select" -->
+                <option value="option" selected>Select a car</option><!--"tag: option"(it's a part of select tag)-->
+                <option value="hundai">i20</option>
+                <option value="maruti">Swift</option>
+                <option value="tata">Punch</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="submitt"></label>
+            <input type="submit" value="Submit now" id="submitt"> <!-- input type : submit -->
+            <input type="reset" value="Rset now" id="submitt"> <!-- input type : reset -->
+        </div>
+    </form>
+</body>
+
+</html>

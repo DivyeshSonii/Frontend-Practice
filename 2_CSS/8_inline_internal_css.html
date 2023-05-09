@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tutorial</title>
+
+    <!-- "External CSS" : linking HTMl with CSS , {command : (link : css + enter)} -->
+    <link rel="stylesheet" href="8_external.css">
+
+    <!-- "Internal CSS" : (written in "head tag") in HTML only. -->
+    <style>
+        p {
+            color: purple;
+            background-color: blue !important;
+        }
+    </style>
+    <!-- "Remove !important command to use External CSS colors." -->
+    <!-- if we want to give more presidence to specific style then use "!important" command "befor semicolon"-->
+</head>
+
+<body>
+    <h3> This is CSS tutorial </h3>
+    <!-- "Inline CSS" : (always written in "body tag" in HTML only & makes HTML looks messy. Not preffered to use.) -->
+    <p style="color: rgb(120, 13, 42); background-color: yellow;"> This tutorial will teach you everything about css you
+        need to know.
+    </p>
+
+    <!-- This paragrah for "external_css" -->
+    <p> This tutorial will teach you everything about css you need to know. </p>
+</body>
+
+</html>
+
+
+<!-- "Inline CSS will get more value/ presidence as compare to Internal CSS." -->
+
+<!-- ex: here, paragraph has already get "inline CSS" in body tag (color: red & b.g color: yellow),
+    now we are also accessing the same paragraph in head tag and giving it "internal CSS" (color: purple),
+    but here, it won't consider "internal CSS", instead it will consider "inline CSS" values. -->

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After Pseudo Selectors</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        header::before {
+            content: "";
+            background: url("https://source.unsplash.com/1600x900") no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            margin: 3px 380px;
+            height: 344px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* section::before {
+            content: "This is the content.";
+        } */
+
+        /* section::after {
+            content: "Hello world";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding world</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, porro quibusdam maxime, consectetur
+            minima aliquid veritatis deleniti consequatur nostrum ducimus quae deserunt, enim quo delectus sint
+            repellat nemo iure vitae!</p>
+    </section>
+    <hr>
+</body>
+
+</html>

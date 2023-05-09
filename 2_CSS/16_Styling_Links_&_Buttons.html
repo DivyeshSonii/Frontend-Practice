@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: rgb(144, 231, 184);
+            padding: 5px 20px 40px 20px;
+            margin: 34px auto;
+            width: 666px;
+        }
+
+        .read {
+            text-decoration: none;
+            /* "text-decoration: none" removes underline*/
+            color: rgb(7, 37, 90);
+            padding: 2px;
+            border-radius: 3px;
+            float: left;
+            font-size: 17px;
+            border: 1px solid rgb(7, 37, 90);
+        }
+
+        /* Pseudo selectors in CSS (visited, hover, active)*/
+        .read:visited {
+            /*   " : visited" - when that link/ button has already visited once.   */
+            border: 1px solid rgb(95, 9, 114);
+            color: rgb(95, 9, 114);
+        }
+
+        .read:hover {
+            /*   " : hover" - when user take his cursor on that link/ button.   */
+            border: 1px solid rgb(18, 18, 192);
+            color: rgb(18, 18, 192);
+        }
+
+        .read:active {
+            /*   " : active" - when user click on that link/ button.   */
+            border: 1px solid rgb(0, 0, 76);
+            color: rgb(0, 0, 76);
+        }
+
+        .btn {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(7, 37, 90);
+            padding: 4px;
+            border-radius: 3px;
+            float: right;
+            font-size: 14px;
+            cursor: pointer;
+            border: 1px solid rgb(7, 37, 90);
+            background-color: lightgoldenrodyellow;
+        }
+
+        .btn:visited {
+            border: 1px solid rgb(95, 9, 114);
+            color: rgb(95, 9, 114);
+        }
+
+        .btn:hover {
+            color: rgb(198, 230, 255);
+            background-color: rgb(18, 18, 192);
+        }
+
+        .btn:active {
+            color: white;
+            background-color: rgb(0, 0, 104);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="count1" class="container">
+        <h2>This is my heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo earum itaque optio minima atque. Sequi
+            reiciendis quod aut atque placeat quia fuga sunt?</p>
+        <a href="https://google.com" class="read" target="_blank">read more</a>
+        <button class="btn">contact us</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML entities</title>
+</head>
+
+<body>
+    <!-- HTML doesn't provide more than 1 space in between of a words -->
+    <!-- To give more than 1 space, use "&nbsp;" command. -->
+    <!-- &nbsp (non-breaking space) -->
+    <div class="container">
+        <p>This is another &nbsp;&nbsp;&nbsp; paragrraph.</p>
+    </div>
+    <!-- Don't use "&nbsp;" It doesn't look professional. We will use padding/ margin from CSS to give space. -->
+
+    <!-- We can't print any tags directly in paragraph or anywhere. -->
+    <!-- ( <p>This is another <p> paragrraph.</p> ) what if we want to print <p> ? -->
+    <!-- To print tags use "&lt;p&gt;" command -->
+    <div class="container">
+        <p>This is another &lt;p&gt; paragrraph.</p>
+        <p>This is another &lt;div&gt; paragraph.</p>
+    </div>
+
+    <!-- HTML Entities is also used to print special characters/ symbols. -->
+    <div class="container">
+        <p>Dollar is written like &dollar;.</p>
+        <p>Pound is written like &pound;.</p>
+        <p>Diamond is written like &diamond;.</p>
+        <p>Lambda is written like &lambda; and &Lambda;.</p>
+        <p>Copyright is written like &copy;.</p>
+        <p>Trademark is written like &trade;.</p>
+        <p>Empty character is written like &#8203;.</p>
+        <p>Another character (arrow) is written like &rAarr;.</p>
+        <!-- Goto google & search (html entity reference) for more characters/ symbols -->
+    </div>
+</body>
+
+</html>

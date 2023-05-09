@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow & Text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border-radius: 15px;
+            /* border: 2px solid red; */
+            background-color: rgb(240, 204, 151);
+
+            /* ------------------------------------- box-shadow ------------------------------------- */
+            /* syntax:  */
+            /* box-shadow:  "offset-x"  "offset-y"  "color" */
+            box-shadow: 7px 4px green;
+            box-shadow: -7px -4px green;
+
+            /* box-shadow:  "offset-x"  "offset-y"  "blurRadius"  "color" */
+            box-shadow: 7px 4px 15px green;
+
+            /* box-shadow:  "offset-x"  "offset-y"  "blurRadius"  "spreadRadius"  "color" */
+            box-shadow: 7px 4px 15px 3px green;
+
+            /* To adjust the darkness of shadow,
+            we have to use "alpha" in color using "rgba" (red green blue alpha) */
+            /* syntax */
+            box-shadow: 7px 4px 15px 3px rgba(71, 172, 172, 0.5);
+
+            /* --------------------------------------------------------------- */
+            /* To give multiple shadows */
+            /* syntax */
+            box-shadow: 7px 4px green, 10px 7px red;
+
+            /* --------------------------------------------------------------- */
+            /* To add shadow inside box, use "inset" */
+            /* syntax */
+            box-shadow: inset 3px 3px black;
+            box-shadow: inset 3px 3px 15px -6px black;
+            box-shadow: inset 3px 3px 15px -6px black, inset -3px -3px 15px -6px black;
+        }
+
+        .card h2 {
+            /* ------------------------------------- text-shadow ------------------------------------- */
+            /* syntax */
+            /* box-shadow:  "offset-x"  "offset-y"  "color" */
+            text-shadow: 1px 1px red;
+
+            /* box-shadow:  "offset-x"  "offset-y"  "blurRadius"  "color" */
+            text-shadow: 1px 1px 3px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2> HTML</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum deserunt voluptatem sed vel. Doloribus
+                facere, dolore aspernatur vero sit tempora omnis voluptatum soluta sunt similique accusamus magnam
+                dolorem unde, alias expedita sint delectus deleniti.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2> CSS</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum deserunt voluptatem sed vel. Doloribus
+                facere, dolore aspernatur vero sit tempora omnis voluptatum soluta sunt similique accusamus magnam
+                dolorem unde, alias expedita sint delectus deleniti.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2> JAVASCRIPT</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum deserunt voluptatem sed vel. Doloribus
+                facere, dolore aspernatur vero sit tempora omnis voluptatum soluta sunt similique accusamus magnam
+                dolorem unde, alias expedita sint delectus deleniti.</p>
+        </div>
+    </div>
+</body>
+
+</html>

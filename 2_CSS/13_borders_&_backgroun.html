@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Borders & Backgrounds</title>
+    <style>
+        #firstpara {
+            background-color: yellow;
+            height: 100px;
+            width: 500px;
+            /* border-width: 4px;
+               border-style: solid;
+               border-color: red;  (border "width, style & color in only 1 command") */
+            border: 4px solid red;
+            border-radius: 10px;
+        }
+
+        #secondpara {
+            background-color: yellow;
+            height: 100px;
+            width: 500px;
+            border-top: 4px solid red;
+            border-bottom: 2px solid green;
+            border-left: 3px solid blue;
+            border-right: 3px solid blue;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 40px;
+        }
+
+        #thirdpara {
+            height: 600px;
+            width: 600px;
+            border: 2px solid red;
+            /* background-image: url('html-5.png'); */
+            /* either write name of the image or copy & paste image url*/
+            background-image: url('https://lh3.googleusercontent.com/a/AEdFTp6lnHVW5lIIcQp2NnvDPs8KuSQnkOJdv2rIEVJZGw=s96-c-rg-br100');
+
+            background-repeat: no-repeat;
+            /* "repeat-x" & "repeat-y" will make it repeat on x & y axis respectively*/
+
+            background-position: center center;
+            /* will shift image at center */
+            /*-------------------------------------------------------*/
+
+            /* background-position: center left; */
+            /* will shift image at center left */
+            /*-------------------------------------------------------*/
+
+            /* background-position: center right; */
+            /* will shift image at center right */
+            /*-------------------------------------------------------*/
+
+            /* background-position: top center; */
+            /* will shift image at top center */
+            /*-------------------------------------------------------*/
+
+            /* background-position: top left; */
+            /* will shift image at top left */
+            /*-------------------------------------------------------*/
+
+            /* background-position: top right; */
+            /* will shift image at top right */
+            /*-------------------------------------------------------*/
+
+            /* background-position: bottom center; */
+            /* will shift image at bottom center */
+            /*-------------------------------------------------------*/
+
+            /* background-position: bottom left; */
+            /* will shift image at bottom left */
+            /*-------------------------------------------------------*/
+
+            /* background-position: bottom right; */
+            /* will shift image at bottom right */
+            /*-------------------------------------------------------*/
+
+            /* background-position: 80px 40px; */
+            /* will shift image in (80'x & 40'y axis respectively) */
+            /*-------------------------------------------------------*/
+
+            /* do try more possible combinations */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Height, Width, Borders & Backgrounds - 1</h3>
+    <p id="firstpara">This is first paragraph.</p>
+
+    <h3>Height, Width, Borders & Backgrounds - 2</h3>
+    <p id="secondpara">This is second paragraph.</p>
+
+    <h3>Height, Width, Borders & Backgrounds - 3</h3>
+    <p id="thirdpara">This is third paragraph.</p>
+</body>
+
+</html>

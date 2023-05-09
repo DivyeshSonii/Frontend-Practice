@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List_Table</title>
+</head>
+
+<body>
+    <!-- List -->
+
+    <!-- "ul" tag - Unordered List -->
+    <!-- "ul style types" : 1) disc, 2) circle, 3) square, 4) none -->
+    <!-- syntax -->
+    <!--    <ul>
+                <li> </li>
+            </ul>            -->
+    <ul type="square">
+        <li>This is first unordered list.</li>
+        <li>This is Second unordered list.</li>
+        <!-- We can also write nested lists. -->
+        <ul type="circle">
+            <li>Another List.</li>
+            <li>Another List.</li>
+            <li>Another List.</li>
+        </ul>
+        <li>This is Third unordered list.</li>
+    </ul>
+
+    <!-- "ol" tag - Ordered List -->
+    <!-- "ol style types" : A, a, I, i, 1 -->
+    <!-- syntax -->
+    <!--    <ol>
+                <li> </li>
+            </ol>           -->
+    <ol type="1">
+        <li>This is first unordered list.</li>
+        <li>This is Second unordered list.</li>
+        <li>This is Third unordered list.</li>
+    </ol>
+
+    <!-- Table -->
+
+    <!-- syntax -->
+    <!--        <table>          -----TABLE START
+                    <thead>          -----Head start
+                        <tr>          -----head Row start
+                            <th> </th>          -----head table Cell
+                        </tr>          -----head Row end
+                    </thead>          -----Head end
+
+                    <tbody>          -----Body start
+                        <tr>          -----body Row start
+                            <td> </td>          -----body table Cell 
+                        </tr>          -----body Row end
+                    </tbody>          -----Body end
+                </table>          -----TABLE END                      -->
+
+    <h3>HTML Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th> ID </th>
+                <th> Name </th>
+                <th> Roll.no </th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td> 1 </td>
+                <td> Divyesh </td>
+                <td> 76 </td>
+            </tr>
+
+            <tr>
+                <td> 2 </td>
+                <td> Hetul </td>
+                <td> 55 </td>
+            </tr>
+
+            <tr>
+                <td> 3 </td>
+                <td> Vishvesh </td>
+                <td> 12 </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

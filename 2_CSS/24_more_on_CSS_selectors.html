@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1 {
+            color: black;
+            background-color: red;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        div p {
+            /*  This will access "all the <p>" inside <div>  */
+            /*  Weather they are direct next to the <div> or they are indide <div> ==> <ul> ==> <li> ==> <p> */
+
+            color: rgb(0, 40, 0);
+            font-weight: bold;
+            background-color: rgb(186, 239, 186);
+        }
+
+        div li p {
+            /*  This will access only those the <p> which are inside <li> of <div>  */
+
+            color: rgb(1, 1, 55);
+            font-weight: bold;
+            background-color: lightskyblue;
+        }
+
+        div>p {
+            /*  This will access only those <p> which are directly next to the <div>  */
+
+            color: rgb(68, 48, 1);
+            font-weight: bold;
+            background-color: yellow;
+        }
+
+        div+p {
+
+            /*  This will access those <p> which last element was <div>  */
+
+            color: white;
+            font-weight: bold;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>More on CSS selectors</h1>
+
+    <div class="container">
+        <p>first para.</p>
+
+        <div class="row">
+            <p>second para.</p>
+        </div>
+
+        <p>third para.</p>
+        <ol>
+            <li>
+                <p>fourth para.</p>
+            </li>
+        </ol>
+
+        <ul>
+            <li>
+                <p>fifth para.</p>
+            </li>
+            <li>
+                sixth para.
+            </li>
+        </ul>
+
+    </div>
+
+    <p> seventh para. </p>
+</body>
+
+</html>
